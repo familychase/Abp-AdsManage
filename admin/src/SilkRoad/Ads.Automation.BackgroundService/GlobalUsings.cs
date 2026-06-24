@@ -1,0 +1,14 @@
+﻿global using Ads.Automation.Domain.Channel;
+global using Ads.Automation.Infrastructure.Caching.Interfaces;
+global using Ads.Automation.Infrastructure.Repository;
+global using Ads.Automation.Infrastructure.Services.Meta;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Logging;
+global using Volo.Abp.Linq;
+global using Volo.Abp.Uow;
+global using Microsoft.EntityFrameworkCore;
+global using Ads.Automation.Domain.Shared.Enums;
+global using Ads.Automation.Infrastructure.SDK.Exceptions;
+global using System.Net;
+global using Ads.Automation.Application.Entity.MetaOAuth;
+global using Ads.Automation.Domain.Shared.Common;

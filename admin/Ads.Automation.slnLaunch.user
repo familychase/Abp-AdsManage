@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Api+SyncJob",
+    "Projects": [
+      {
+        "Path": "src\\SilkRoad\\Ads.Automation.Api\\Ads.Automation.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\SilkRoad\\Ads.Automation.SyncJobService\\Ads.Automation.SyncJobService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

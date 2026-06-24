@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="src/Infrastructure/Ads.Automation.Infrastructure.Caching/Ads.Automation.Infrastructure.Caching.csproj" Id="49491267-0109-4bf6-99eb-5667ac7fd79e" />
+    <Project Path="src/Infrastructure/Ads.Automation.Infrastructure.IdGenerator/Ads.Automation.Infrastructure.IdGenerator.csproj" />
+    <Project Path="src/Infrastructure/Ads.Automation.Infrastructure.RabbitMq/Ads.Automation.Infrastructure.RabbitMq.csproj" Id="f71e60b8-84fa-4602-a842-dffab1767e2f" />
+    <Project Path="src/Infrastructure/Ads.Automation.Infrastructure.Repository/Ads.Automation.Infrastructure.Repository.csproj" />
+    <Project Path="src/Infrastructure/Ads.Automation.Infrastructure.SDK/Ads.Automation.Infrastructure.SDK.csproj" Id="877175c6-f191-4a12-b63c-af3fff5d2a4e" />
+  </Folder>
+  <Folder Name="/src/SilkRoad/">
+    <Project Path="src/SilkRoad/Ads.Automation.Api/Ads.Automation.Api.csproj" />
+    <Project Path="src/SilkRoad/Ads.Automation.Application.Contracts/Ads.Automation.Application.Contracts.csproj" />
+    <Project Path="src/SilkRoad/Ads.Automation.Application/Ads.Automation.Application.csproj" />
+    <Project Path="src/SilkRoad/Ads.Automation.BackgroundService/Ads.Automation.BackgroundService.csproj" />
+    <Project Path="src/SilkRoad/Ads.Automation.SyncJobService/Ads.Automation.SyncJobService.csproj" />
+    <Project Path="src/SilkRoad/Ads.Automation.Domain.Shared/Ads.Automation.Domain.Shared.csproj" Id="333fd6ce-9393-49c5-b0af-24d1f0688558" />
+    <Project Path="src/SilkRoad/Ads.Automation.Domain/Ads.Automation.Domain.csproj" />
+    <Project Path="src/SilkRoad/Ads.Automation.EntityFrameworkCore/Ads.Automation.EntityFrameworkCore.csproj" Id="e4900819-a871-4ff3-b4db-8ad1f14a3dc7" />
+  </Folder>
+</Solution>

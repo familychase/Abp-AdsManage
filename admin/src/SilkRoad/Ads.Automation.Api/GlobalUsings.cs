@@ -1,0 +1,24 @@
+﻿global using System.Text.Json;
+global using Ads.Automation.Api.Common;
+global using Ads.Automation.Application;
+global using Ads.Automation.Application.Contracts.IntegrationJobs;
+global using Ads.Automation.Infrastructure.Caching.Interfaces;
+global using Microsoft.AspNetCore.Mvc;
+global using Volo.Abp.AspNetCore.Mvc;
+global using Ads.Automation.BackgroundService;
+global using Ads.Automation.Domain.Shared.Common;
+global using Ads.Automation.Domain.Shared.Localization;
+global using Ads.Automation.EntityFrameworkCore;
+global using Ads.Automation.Infrastructure.RabbitMq.Extensions;
+global using Ads.Automation.Infrastructure.RabbitMq.Interfaces;
+global using Ads.Automation.Infrastructure.Yitter;
+global using Microsoft.Extensions.Localization;
+global using Microsoft.OpenApi;
+global using Volo.Abp;
+global using Volo.Abp.Autofac;
+global using Volo.Abp.Modularity;
+global using Microsoft.AspNetCore.Authorization;
+global using Ads.Automation.Application.Contracts.Entity.Reporting;
+global using Ads.Automation.Application.Contracts.Entity.Dict;
+global using Ads.Automation.Application.Contracts.Entity.Publishing;
+

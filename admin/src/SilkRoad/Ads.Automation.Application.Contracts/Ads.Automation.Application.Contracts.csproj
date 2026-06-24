@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Authorization" Version="10.4.0" />
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="10.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ads.Automation.Domain.Shared\Ads.Automation.Domain.Shared.csproj" />
+    <ProjectReference Include="..\Ads.Automation.Domain\Ads.Automation.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entity\Departments\" />
+  </ItemGroup>
+
+</Project>

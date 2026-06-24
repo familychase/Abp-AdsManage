@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <CopyBuildHostToOutput>false</CopyBuildHostToOutput>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="10.4.0" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="10.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ads.Automation.Application\Ads.Automation.Application.csproj" />
+    <ProjectReference Include="..\Ads.Automation.BackgroundService\Ads.Automation.BackgroundService.csproj" />
+    <ProjectReference Include="..\Ads.Automation.Domain\Ads.Automation.Domain.csproj" />
+    <ProjectReference Include="..\Ads.Automation.EntityFrameworkCore\Ads.Automation.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Ads.Automation.Infrastructure.Caching\Ads.Automation.Infrastructure.Caching.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Ads.Automation.Infrastructure.RabbitMq\Ads.Automation.Infrastructure.RabbitMq.csproj" />
+  </ItemGroup>
+
+</Project>
