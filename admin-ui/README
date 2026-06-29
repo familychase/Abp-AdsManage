@@ -1,0 +1,12 @@
+安装和使用
+获取代码
+git clone https://github.com/kailong321200875/vue-element-plus-admin.git
+安装依赖
+cd vue-element-plus-admin
+
+pnpm install
+运行
+pnpm run dev
+打包
+pnpm run build:pro
+来源：https://element-plus-admin.cn/#/dashboard/analysis

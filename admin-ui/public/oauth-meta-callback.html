@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>授权中...</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f0f2f5;
+      color: #303133;
+      font-size: 15px;
+    }
+    .box { text-align: center; }
+    .box p { margin-top: 12px; color: #909399; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p id="msg">授权完成，正在返回...</p>
+  </div>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var code = params.get('code');
+      var state = params.get('state');
+      var msgEl = document.getElementById('msg');
+
+      // 从当前路径推导 base（兼容 VITE_BASE_PATH 前缀，如 /dist-test/）
+      var path = window.location.pathname;
+      var base = path.substring(0, path.lastIndexOf('/') + 1);
+
+      // 立即清除地址栏中的敏感参数
+      var cleanUrl = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, '', cleanUrl);
+
+      if (!code || !state) {
+        msgEl.textContent = '授权参数缺失，请关闭此窗口后重试';
+        msgEl.style.color = '#e6a23c';
+        return;
+      }
+
+      if (window.opener && window.opener !== window) {
+        // 弹窗模式：回传 code/state 给父窗口
+        window.opener.postMessage(
+          { type: 'META_OAUTH_CALLBACK', code: code, state: state },
+          window.location.origin
+        );
+        // 延迟关闭，确保父窗口收到消息
+        setTimeout(function () { window.close(); }, 150);
+      } else {
+        // 非弹窗场景（直接浏览器跳转）：跳回授权管理页
+        msgEl.textContent = '授权完成，正在跳转...';
+        window.location.replace(
+          window.location.origin + base + 'assets/auth-manage' + window.location.search
+        );
+      }
+    })();
+  </script>
+</body>
+</html>
